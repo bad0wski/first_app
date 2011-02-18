@@ -1,4 +1,5 @@
-== Welcome to Rails
+== Welcome to First_App
+
 
 Rails is a web-application framework that includes everything needed to create
 database-backed web applications according to the Model-View-Control pattern.
@@ -28,6 +29,7 @@ link:files/vendor/rails/actionpack/README.html.
 
 == Getting Started
 
+
 1. At the command prompt, create a new Rails application:
        <tt>rails new myapp</tt> (where <tt>myapp</tt> is the application name)
 
@@ -40,13 +42,15 @@ link:files/vendor/rails/actionpack/README.html.
 4. Follow the guidelines to start developing your application. You can find
 the following resources handy:
 
-* The Getting Started Guide: http://guides.rubyonrails.org/getting_started.html
+* The Getting Started Guide: http://guides.rubyonrails.org/etting_started.html
+
 * Ruby on Rails Tutorial Book: http://www.railstutorial.org/
 
 
 == Debugging Rails
 
-Sometimes your application goes wrong. Fortunately there are a lot of tools that
+Sometimes your application goes wrong. Fortunately here are a lot of tools that
+
 will help you debug it and get it back on the rails.
 
 First area to check is the application log files. Have "tail -f" commands
@@ -120,102 +124,199 @@ Finally, when you're ready to resume execution, you can enter "cont".
 == Console
 
 The console is a Ruby shell, which allows you to interact with your
+
 application's domain model. Here you'll have all parts of the application
+
 configured, just like it is when the application is running. You can inspect
+
 domain models, change values, and save to the database. Starting the script
+
 without arguments will launch it in the development environment.
 
+
+
 To start the console, run <tt>rails console</tt> from the application
+
 directory.
+
+
 
 Options:
 
+
+
 * Passing the <tt>-s, --sandbox</tt> argument will rollback any modifications
+
   made to the database.
+
 * Passing an environment name as an argument will load the corresponding
+
   environment. Example: <tt>rails console production</tt>.
 
+
+
 To reload your controllers and models after launching the console run
+
 <tt>reload!</tt>
 
+
+
 More information about irb can be found at:
+
 link:http://www.rubycentral.com/pickaxe/irb.html
+
+
+
 
 
 == dbconsole
 
+
+
+
+
 You can go to the command line of your database directly through <tt>rails
+
 dbconsole</tt>. You would be connected to the database with the credentials
+
 defined in database.yml. Starting the script without arguments will connect you
+
 to the development database. Passing an argument will connect you to a different
+
 database, like <tt>rails dbconsole production</tt>. Currently works for MySQL,
+
 PostgreSQL and SQLite 3.
 
 == Description of Contents
 
+
+
 The default directory structure of a generated Ruby on Rails application:
 
+
+
   |-- app
+
   |   |-- controllers
+
   |   |-- helpers
+
   |   |-- mailers
+
   |   |-- models
+
   |   `-- views
+
   |       `-- layouts
+
   |-- config
+
   |   |-- environments
+
   |   |-- initializers
+
   |   `-- locales
+
   |-- db
+
   |-- doc
+
   |-- lib
+
   |   `-- tasks
+
   |-- log
+
   |-- public
+
   |   |-- images
+
   |   |-- javascripts
+
   |   `-- stylesheets
+
   |-- script
+
   |-- test
+
   |   |-- fixtures
+
   |   |-- functional
+
   |   |-- integration
+
   |   |-- performance
+
   |   `-- unit
+
   |-- tmp
+
   |   |-- cache
+
   |   |-- pids
+
   |   |-- sessions
+
   |   `-- sockets
+
   `-- vendor
+
       `-- plugins
 
+
+
 app
+
   Holds all the code that's specific to this particular application.
 
+
+
 app/controllers
+
   Holds controllers that should be named like weblogs_controller.rb for
+
   automated URL mapping. All controllers should descend from
+
   ApplicationController which itself descends from ActionController::Base.
 
+
+
 app/models
+
   Holds models that should be named like post.rb. Models descend from
+
   ActiveRecord::Base by default.
 
+
+
 app/views
+
   Holds the template files for the view that should be named like
+
   weblogs/index.html.erb for the WeblogsController#index action. All views use
+
   eRuby syntax by default.
 
+
+
 app/views/layouts
+
   Holds the template files for layouts to be used with views. This models the
+
   common header/footer method of wrapping views. In your views, define a layout
+
   using the <tt>layout :default</tt> and create a file named default.html.erb.
+
   Inside default.html.erb, call <% yield %> to render the view using this
+
   layout.
 
+
+
 app/helpers
+
   Holds view helpers that should be named like weblogs_helper.rb. These are
+
   generated for you automatically when using generators for controllers.
   Helpers can be used to wrap functionality for your views into methods.
 
